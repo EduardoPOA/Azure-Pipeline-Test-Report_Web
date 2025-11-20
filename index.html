@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title></title>
+  <link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@3da944e596e81f10ac6c1042c792af8a5a741023/commons/img/logo.png">
+  <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@8539670db814bf19a0ddbe9a6d19058aea0cf981/spark/css/spark-style.css" rel="stylesheet" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style> </style>
+</head>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="spa bdd-report dark">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+            <div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary"></span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">11/20/2025 09:06:26</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+            <div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown" onclick="toggleView('test-view')">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="side-nav-controls">
+    <ul>
+      <li>
+        <a href="#" class="lightsout" style="color:#8a8a8a;">
+          <i class="fa fa-desktop"></i>"</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row test-view">
+    <div class="test-list">
+        <div class="test-list-tools">
+            <ul class="tools pull-left">
+                <li>
+                    <a href="">
+                        <span class="font-size-14">Tests</span>
+                    </a>
+                </li> 
+            </ul>
+            <ul class="tools text-right">
+				<li class="user-profile dropdown dropdown-animated scale-left">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<i class="fa fa-exclamation-circle"></i>
+					</a>
+					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>						<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																														<div class="dropdown-divider"></div>
+						<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+					</ul>
+				</li>
+								            </ul>
+        </div>
+        <div class="test-list-wrapper scrollable">
+            <ul class="test-list-item">
+					<li class="test-item" status="fail" author="" device="" tag="" test-id="1"> 
+						<div class="status-avatar fail-bg">
+							<i class="fa fa-times text-white"></i>
+						</div>
+						<div class="open-test">
+							<div class="test-detail"> 
+								<p class="name">TeleVenda</p> 
+								<p class="duration text-sm">0h:2m:56s+834ms</p> 
+								<span class="datetime">09:06:26 AM</span>
+							</div>
+						</div>
+						<div class="test-contents d-none">
+							<div class="detail-head">
+								<div class="p-v-10 d-inline-block">	
+									<div class="info">
+										<h5 class="test-status text-fail">TeleVenda</h5>
+										<span class='badge badge-success'>11/20/2025 09:06:26</span>
+										<span class='badge badge-danger'>11/20/2025 09:09:23</span>
+										<span class='badge badge-default'>0h:2m:56s+834ms</span>
+									</div>
+																	</div>
+							</div>
+
+<div class="accordion mt-4">
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Scenario: 1- Gerando uma Tele-Venda com pagamento Dinheiro</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+                    <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-start given" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Given acesso na página tele entrega 'http://fsj-tele.k3s.qas.farmaciassaojoao.com.br/'</span>
+                            </div>
+			<div class="details">PASSOU</div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When inicio a sessão inserindo dados de login</span>
+                            </div>
+			<div class="details">PASSOU</div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon fail-bg">
+                                    <i class="fa fa-times text-white"></i>
+                                </span>
+                                <span>When na Tele-Vendas deverá inserir e pesquisar no campo cep ou cpf número '99150000'</span>
+                            </div>
+			<div class="details">INCONCLUSIVO - o elemento não foi encontrado</div>
+			<span class="badge badge-primary"><a href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB38AAAOsCAIAAADFpuvbAAAQAElEQVR4nOzdS4yd5X3H8ffcZs7c7PF4PL6Nb9gxYHBMgAJJE5oQ5VplU7WpoqRqpWZRqbu2Qsq+UqUuuqoqRV10UbWJkqhS0xBShYQQggjgxBjsGts4YOP7eOy5z5k558z0AAESAmmCfyyq8/ksZp73ovdsX3316P9WJyamCwAAAAAAiKoWAAAAAACQpj4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAA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+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAANRxam8AAAcpSURBVABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAA8L/s2LEAAAAAwCB/60nsLIwA+NlnAAAAAAB+9hkAAAAAgJ99BgAAAADgZ58BAAAAAPjZZwAAAAAAfvYZAAAAAICffQYAAAAA4GefAQAAAAD42WcAAAAAAH72GQAAAACAn30GAAAAAOBnnwEAAAAA+NlnAAAAAAB+9hkAAAAAgJ99BgAAAADgZ58BAAAAAPjZZwAAAAAAfvYZAAAAAICffQYAAAAA4GefAQAAAAD42WcAAAAAAH72GQAAAACAn30GAAAAAOBnnwEAAAAA+NlnAAAAAAB+9hkAAAAAgJ99BgAAAADgZ58BAAAAAPjZZwAAAAAAfvYZAAAAAICffQYAAAAA4GefAQAAAAD42WcAAAAAAH72GQAAAACAn30GAAAAAOBnnwEAAAAA+NlnAAAAAAB+9hkAAAAAgJ99BgAAAADgZ58BAAAAAPjZZwAAAAAAfvYZAAAAAICffQYAAAAA4GefAQAAAAD42WcAAAAAAH72GQAAAACAn30GAAAAAOBnnwEAAAAA+NlnAAAAAAB+9hkAAAAAgJ99BgAAAADgZ58BAAAAAPjZZwAAAAAAfvYZAAAAAICffQYAAAAA4GefAQAAAAD42WcAAAAAAH72GQAAAACAn30GAAAAAOBnnwEAAAAA+NlnAAAAAAB+9hkAAAAAgF8AAAD//y93gzwAAAAGSURBVAMA2Y0G83Y9EY4AAAAASUVORK5CYII=' data-featherlight='image'><span class='label grey badge white-text text-white'>base64-img</span></a></span>
+                    </div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Scenario: 2- Gerando uma Tele-Venda com pagamento 4-TEF</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+                    <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-start given" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Given acesso na página tele entrega 'http://fsj-tele.k3s.qas.farmaciassaojoao.com.br/'</span>
+                            </div>
+			<div class="details">PASSOU</div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When inicio a sessão inserindo dados de login</span>
+                            </div>
+			<div class="details">PASSOU</div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon fail-bg">
+                                    <i class="fa fa-times text-white"></i>
+                                </span>
+                                <span>When na Tele-Vendas deverá inserir e pesquisar no campo cep ou cpf número '99150000'</span>
+                            </div>
+			<div class="details">INCONCLUSIVO - o elemento não foi encontrado</div>
+			<span class="badge badge-primary"><a href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB38AAAOsCAIAAADFpuvbAAAQAElEQVR4nOzdSaxe513H8fMOd7av59nOYDvxkDi2Q5s4MWlI04kqTaJKUAQVC9QFCCGxggULNqxAAqmqGDZUCCQEgdI2Tdqmapsmack8Oc7gIU7sOB6u7evhzvcdOLarkEZpi8PPEuV8Pnr16jn3nPfc7dFXfz2nOTJypgAAAAAAgKhmAQAAAAAAaeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnqMwAAAAAAeeozAAAAAAB56jMAAAAAAHnq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pz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAADOIRL0AAAc6SURBVAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAAkKc+AwAAAACQpz4DAAAAAJCnPgMAAAAA8F/s2LEAAAAAwCB/60nsLIx+9hkAAAAAgJ99BgAAAADgZ58BAAAAAPjZZwAAAAAAfvYZAAAAAICffQYAAAAA4GefAQAAAAD42WcAAAAAAH72GQAAAACAn30GAAAAAOBnnwEAAAAA+NlnAAAAAAB+9hkAAAAAgJ99BgAAAADgZ58BAAAAAPjZZwAAAAAAfvYZAAAAAICffQYAAAAA4GefAQAAAAD42WcAAAAAAH72GQAAAACAn30GAAAAAOBnnwEAAAAA+NlnAAAAAAB+9hkAAAAAgJ99BgAAAADgZ58BAAAAAPjZZwAAAAAAfvYZAAAAAICffQYAAAAA4GefAQAAAAD42WcAAAAAAH72GQAAAACAn30GAAAAAOBnnwEAAAAA+NlnAAAAAAB+9hkAAAAAgJ99BgAAAADgZ58BAAAAAPjZZwAAAAAAfvYZAAAAAICffQYAAAAA4GefAQAAAAD42WcAAAAAAH72GQAAAACAn30GAAAAAOBnnwEAAAAA+NlnAAAAAAB+9hkAAAAAgJ99BgAAAADgZ58BAAAAAPjZZwAAAAAAfvYZAAAAAICffQYAAAAA4GefAQAAAAD42WcAAAAAAH72GQAAAACAn30GAAAAAOBnnwEAAAAA+NlnAAAAAAB+9hkAAAAAgJ99BgAAAADgFwAAAP//drjBjgAAAAZJREFUAwCjtQL0os+1+QAAAABJRU5ErkJggg==' data-featherlight='image'><span class='label grey badge white-text text-white'>base64-img</span></a></span>
+                    </div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Scenario: 3- Gerando uma Tele-Venda com pagamento Convenio</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+                    <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-start given" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Given acesso na página tele entrega 'http://fsj-tele.k3s.qas.farmaciassaojoao.com.br/'</span>
+                            </div>
+			<div class="details">PASSOU</div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When inicio a sessão inserindo dados de login</span>
+                            </div>
+			<div class="details">PASSOU</div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon fail-bg">
+                                    <i class="fa fa-times text-white"></i>
+                                </span>
+                                <span>When na Tele-Vendas deverá inserir e pesquisar no campo cep ou cpf número '99150000'</span>
+                            </div>
+			<div class="details">INCONCLUSIVO - o elemento não foi encontrado</div>
+			<span class="badge badge-primary"><a href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB38AAAOsCAIAAADFpuvbAAAQAElEQVR4nOzdW4xc92Hf8TMze79xd8nd5WUp3kRKpCwxthhZdQ3XTmOndZukBYK6KNACfXKBFuhTBbh9ax76WhdFX4o26EONtmgQ2TEiR4qcmyJbkiWRkUSZlHgzV+Qud5d74e7OzF5mciTGRGI7sBL9HhLO54OD3f/85+yZ18EX//3/u+bnVwoAAAAAAIjqKgAAAAAAIE19BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAAAAAgT30GAAAAACBPfQYAAAAAIE99BgAA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APLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAKLRa9AAAAd7SURBVAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAgD9hx44FAAAAAAb5W09iZ2EEAADAzz4DAAAAAPCzzwAAAAAA/OwzAAAAAAA/+wwAAAAAwM8+AwAAAADws88AAAAAAPzsMwAAAAAAP/sMAAAAAMDPPgMAAAAA8LPPAAAAAAD87DMAAAAAAD/7DAAAAADAzz4DAAAAAPCzzwAAAAAA/OwzAAAAAAA/+wwAAAAAwM8+AwAAAADws88AAAAAAPzsMwAAAAAAP/sMAAAAAMDPPgMAAAAA8LPPAAAAAAD87DMAAAAAAD/7DAAAAADAzz4DAAAAAPCzzwAAAAAA/OwzAAAAAAA/+wwAAAAAwM8+AwAAAADws88AAAAAAPzsMwAAAAAAP/sMAAAAAMDPPgMAAAAA8LPPAAAAAAD87DMAAAAAAD/7DAAAAADAzz4DAAAAAPCzzwAAAAAA/OwzAAAAAAA/+wwAAAAAwM8+AwAAAADws88AAAAAAPzsMwAAAAAAP/sMAAAAAMDPPgMAAAAA8LPPAAAAAAD87DMAAAAAAD/7DAAAAADAzz4DAAAAAPCzzwAAAAAA/OwzAAAAAAA/+wwAAAAAwM8+AwAAAADws88AAAAAAPzsMwAAAAAAP/sMAAAAAMDPPgMAAAAA8LPPAAAAAAD87DMAAAAAAD/7DAAAAADAzz4DAAAAAPCzzwAAAAAA/OwzAAAAAAC/AAAA//+llAByAAAABklEQVQDAAHdOZx8svi9AAAAAElFTkSuQmCC' data-featherlight='image'><span class='label grey badge white-text text-white'>base64-img</span></a></span>
+                    </div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Scenario: 3- Gerando uma Tele-Venda com pagamento Convenio</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+                    <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-start given" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Given acesso na página tele entrega 'http://fsj-tele.k3s.qas.farmaciassaojoao.com.br/'</span>
+                            </div>
+			<div class="details">PASSOU</div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When inicio a sessão inserindo dados de login</span>
+                            </div>
+			<div class="details">PASSOU</div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon fail-bg">
+                                    <i class="fa fa-times text-white"></i>
+                                </span>
+                                <span>When na Tele-Vendas deverá inserir e pesquisar no campo cep ou cpf número '99150000'</span>
+                            </div>
+			<div class="details">INCONCLUSIVO - o elemento não foi encontrado</div>
+			<span class="badge badge-primary"><a href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB38AAAOsCAIAAADFpuvbAAAQAElEQVR4nOzdaYzc50HH8dnZ2d3ZXa/38LE+187lxLETx05C7VxtmpJCaAi0KYKWBlUVoqIveAFEqqgoAgSClyBEpZarVOoRGlJo2rQEmjSJczqHk9jxFR/xvV57d73X7M7OMomhhLRVA/m9aDOfj1ajR8///3/27eirZ55/aXBwpAAAAAAAAFGlAgAAAAAApKnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8AAAAAAOSpzwAAAAAA5KnPAAAAAADkqc8A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5ubmClG3bbni0x+69d0b1haLP/hr9opFvb9wzca2FltAAABoCL74AgDQcJ7d98p4pbJyUd/S3u6WUuDE53PKrS1bLr1g2YKegUV9X/jOo1PT1dcH7va2lvdfu3H5guTrDQEA4MdZ8513frIAAAAN48jQmc/f/+if3XXfyeHRRd1di3vmNxeTvwjsmdexdmBJ77yOI0PD41OV2Vrt3PzGCwZ+7aYtq/sXFgAAoDGozwAANJDpavWp3Qc/962HT5wZ3XdscNfh453ltrUrlxai5rWX1w4sXb6g5/ToxKnRsZnqbFd7+QPXbbp184Zs6QYAgB9n6jMAAA3kzNjE3337ka079tbH1dna0aHh7fuPzFSrl65aVio2B8/EaC2VLly2+NKBJeNT0wdOnj6vf+EffuS2ro5yAQAAGob6DABAA3nspZf/+t4HJioz35sZnZjccejoyPjU4p6ueh0uNceOgS42NS3q7tp8yQUL5s973zsuXzuwpOjEZwAAGknT4OBIAQAAGsD4VOW3PvPl+5/ZUZmpvuFSa0vp3Rsu+dC7fuqaSy/oLLcVour/tx6121q88RsAgMbi1DkAABpCrVb7+hPbt+058P3puW56pvpvT+/40698855Hnymk1XO29AwAQANSnwEAaAgHB8/86+Pbj58Z/WE3tLe1zFRn9x4ZrM7OFkLm5uYKAADQqGzBAADg7W+6Wn1y1/6HX9jzhvl55XJvV8falUtWLOxZ2te7pHd+fVxLJOPZWm1kfHJ8qtLd2T6/o70AAACNR30GAODtb6Iyc/cj22aqs13t7Uv65i/t7e4ot1amp4dGJ2Zmq9etv+i2zRsW98wvhMzNze0/furjf/mFAyeG/viO235+yxUdba0FAABoMOozAABvf7Va7YbLLr5k5dLF3V1L+rqXLehuLpa+9OATDz7/6m7oFw4cuXnTpYWcykz1Kw89dejk6fGpytad+65dd2HHor4CAAA0GPUZAIC3v6728gevv6q52NTX1XluZqY6W0/D331+z+FTpx9+ce+a5f2fuPXGQkJ95af2HHj4hT319ZuLxfOXLOqd11EAAIDG462DAAC8/bWUmhd1z/teej43c/WaVbdft7E+Pjo0/Jl7H3zx4NHqbK3wlh04OfSlB5966fDx2tzchvNX/MxV6+a1lwsAANB41GcAABpUZ7ntgzdcvX718uZi8dTo2Kc+/7Und++fnJ4pvAX1dT77ze9+9eFtk5WZrvbyb9zyzktWLi0AAEBDar7zzk8WAACgIfXO65ianjl86szQ2fFjp0eGRsfnd5SX9nW3lv7PJ9TNzc2dGh3//c/f808PbZt7beb266+64z1byq0tBQAAaEjqMwAADW3Fot6OctuBE0Onz44fPDm06/Dx6mxtdf/CjnLrm1/k1OjYozv3febeB+9/Zmdlptrd0f6ejZd+7L3Xrupf0NTUVAAAgIbUNDg4UgAAgAY2OjFZr8a/9/f/PDw+WY/F89rLP7Vm9ac/fOvinnldHe3FH5WP6+n5roe2feOJ7TsOHZuoTJdbW265+rI7btp8+Xkr29tsfAYAoHGpzwAAUJieqd637cU/+fI3jg0NT1dnW5qb53eWP3DtlZsvOf+i5YtXLOxta2mZqFTaWkql5ub6/eNTleOnRw4Nnnly9/67H3nm4Mmhc+ss7pn/kZs233HTlsU9XQUAAGhs6jMAALxqanpm68699ZT89N5Dh06ers29anX/gvOXLKw355WL+i5ctniuNjcyMTE8Njk5PT02WTkyNHzg5NDJM6NzhUJXe/my1ct//Wevf++V6woAAID6DAAAr3diePSxnS8/8Pzue594frIyXZ2drU+Wmotzc4XZWq2l1NzdUZ6u1kYnJl//1PIFvTdtvOTmTZduvuS8znK5AAAAqM8AAPAGM9XZwdGzuw+f/It7/v3s1NTw2MThU2fq88Wmplo9Qr+muVhc2te9un/h2oGlV100cM3aC/vmdxa9YBAAAF5HfQYAgB9gtlarf75w4OjLxwcrM9XdR05s23NwUXfX6v4Fi3u65neUS83Ny/q6ly/srU92tLUWAACA/019BgCAH2FqeqYeozvLbRNT05VqtdhUmNdebi4WCwAAwA+nPgMAAAAAkFcqAAAAAABAmvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAM7KZg4AAAdKSURBVAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAECe+gwAAAAAQJ76DAAAAABAnvoMAAAAAEDef7JjxwIAAAAAg/ytJ7GzMLLPAAAAAAD87DMAAAAAAD/7DAAAAADAzz4DAAAAAPCzzwAAAAAA/OwzAAAAAAA/+wwAAAAAwM8+AwAAAADws88AAAAAAPzsMwAAAAAAP/sMAAAAAMDPPgMAAAAA8LPPAAAAAAD87DMAAAAAAD/7DAAAAADAzz4DAAAAAPCzzwAAAAAA/OwzAAAAAAA/+wwAAAAAwM8+AwAAAADws88AAAAAAPzsMwAAAAAAP/sMAAAAAMDPPgMAAAAA8LPPAAAAAAD87DMAAAAAAD/7DAAAAADAzz4DAAAAAPCzzwAAAAAA/OwzAAAAAAA/+wwAAAAAwM8+AwAAAADws88AAAAAAPzsMwAAAAAAP/sMAAAAAMDPPgMAAAAA8LPPAAAAAAD87DMAAAAAAD/7DAAAAADAzz4DAAAAAPCzzwAAAAAA/OwzAAAAAAA/+wwAAAAAwM8+AwAAAADws88AAAAAAPzsMwAAAAAAP/sMAAAAAMDPPgMAAAAA8LPPAAAAAAD87DMAAAAAAD/7DAAAAADAzz4DAAAAAPCzzwAAAAAA/OwzAAAAAAA/+wwAAAAAwM8+AwAAAADws88AAAAAAPzsMwAAAAAAP/sMAAAAAMDPPgMAAAAA8LPPAAAAAAD87DMAAAAAAL8AAAD//+opIw0AAAAGSURBVAMAbwgRNd5eOrAAAAAASUVORK5CYII=' data-featherlight='image'><span class='label grey badge white-text text-white'>base64-img</span></a></span>
+                    </div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">Scenario: 3- Gerando uma Tele-Venda com pagamento Convenio</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+                    <div class="card-body">
+                                                    <div class="d-flex align-items-center justify-content-start given" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>Given acesso na página tele entrega 'http://fsj-tele.k3s.qas.farmaciassaojoao.com.br/'</span>
+                            </div>
+			<div class="details">PASSOU</div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon pass-bg">
+                                    <i class="fa fa-check text-white"></i>
+                                </span>
+                                <span>When inicio a sessão inserindo dados de login</span>
+                            </div>
+			<div class="details">PASSOU</div>
+                            <div class="d-flex align-items-center justify-content-start when" title="">
+                                <span class="alert-icon fail-bg">
+                                    <i class="fa fa-times text-white"></i>
+                                </span>
+                                <span>When na Tele-Vendas deverá inserir e pesquisar no campo cep ou cpf número '99150000'</span>
+                            </div>
+			<div class="details">INCONCLUSIVO - o elemento não foi encontrado</div>
+			<span class="badge badge-primary"><a href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB38AAAOsCAIAAADFpuvbAAAQAElEQVR4nOzdWYxd9WHH8XtnXzxje8Ye79tgjAkMm4OB0EBISUgge7coKmnaqstDVVWtRJWnqlXaKupDK+WlykOTtmmTLoEGJbRpHKgDGMxmY4N3j8e7x2OPZzwznu3O3F5wlFoE0iT+IRHu56Orq3P+59x7Xo+++uv/rxsYGC4AAAAAAEBUXQEAAAAAANLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAA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8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAJQDAVgAAAdSSURBVAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZwAAAAAA8tRnAAAAAADy1GcAAAAAAPLUZ+B/2bFjAQAAAIBB/taT2FkYAQAAAMDPPgMAAAAA8LPPAAAAAAD87DMAAAAAAD/7DAAAAADAzz4DAAAAAPCzzwAAAAAA/OwzAAAAAAA/+wwAAAAAwM8+AwAAAADws88AAAAAAPzsMwAAAAAAP/sMAAAAAMDPPgMAAAAA8LPPAAAAAAD87DMAAAAAAD/7DAAAAADAzz4DAAAAAPCzzwAAAAAA/OwzAAAAAAA/+wwAAAAAwM8+AwAAAADws88AAAAAAPzsMwAAAAAAP/sMAAAAAMDPPgMAAAAA8LPPAAAAAAD87DMAAAAAAD/7DAAAAADAzz4DAAAAAPCzzwAAAAAA/OwzAAAAAAA/+wwAAAAAwM8+AwAAAADws88AAAAAAPzsMwAAAAAAP/sMAAAAAMDPPgMAAAAA8LPPAAAAAAD87DMAAAAAAD/7DAAAAADAzz4DAAAAAPCzzwAAAAAA/OwzAAAAAAA/+wwAAAAAwM8+AwAAAADws88AAAAAAPzsMwAAAAAAP/sMAAAAAMDPPgMAAAAA8LPPAAAAAAD87DMAAAAAAD/7DAAAAADAzz4DAAAAAPCzzwAAAAAA/OwzAAAAAAA/+wwAAAAAwM8+AwAAAADws88AAAAAAPzsMwAAAAAAP/sMAAAAAMDPPgMAAAAA8AsAAP//dcjQmAAAAAZJREFUAwDV1CekJhZqvQAAAABJRU5ErkJggg==' data-featherlight='image'><span class='label grey badge white-text text-white'>base64-img</span></a></span>
+                    </div>
+				</div>
+	</div>
+</div>
+						</div>
+					</li>
+            </ul>    
+        </div>
+    </div>
+    <div class="test-content scrollable">
+        <div class="test-content-tools">
+            <ul>
+                <li>
+                    <a class="back-to-test" href="javascript:void(0)">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="test-content-detail">
+            <div class="detail-body"></div>
+        </div>
+    </div>
+</div>
+										<div class="container-fluid p-4 dashboard-view">
+	<div class="row">
+		<div class="col-sm-12 col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Features</h6>
+				</div>
+				<div class="card-body">
+	                <div class="">
+	                    <canvas id='parent-analysis' width='115' height='90'></canvas>
+	                </div>
+	            </div>
+	            <div class="card-footer">
+	                <div><small data-tooltip='0%'>
+	                    <b>0</b> features passed
+                    </small></div>
+	                <div>
+	                    <small data-tooltip='100%'><b>1</b> features failed, 
+	                    <b data-tooltip='0%'>0</b> others
+	                    </small>
+                    </div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Scenarios</h6>
+				</div>
+				<div class="card-body">
+	                <div class="">
+	                    <canvas id='child-analysis' width='115' height='90'></canvas>
+	                </div>
+	            </div>
+	            <div class="card-footer">
+	                <div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+	                <div>
+	                    <small data-tooltip='100%'><b>5</b> scenarios failed, 
+	                    <b data-tooltip='0%'>0</b> others
+	                    </small>
+                    </div>
+	            </div>
+			</div>
+		</div>
+				<div class="col-sm-12 col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<h6 class="card-title">Steps</h6>
+				</div>
+				<div class="card-body">
+	                <div class="">
+	                    <canvas id='grandchild-analysis' width='115' height='90'></canvas>
+	                </div>
+	            </div>
+	            <div class="card-footer">
+	                <div><small data-tooltip='66.66666666666666%'><b>10</b> steps passed</small></div>
+	                <div>
+	                    <small data-tooltip='33.33333333333333%'><b>5</b> steps failed, 
+	                    <b data-tooltip='0%'>0</b> others
+	                    </small>
+                    </div>
+	            </div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Features</h6>
+							<h2 class="font-size-28 font-weight-light">1</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+								<span>0%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Scenarios</h6>
+							<h2 class="font-size-28 font-weight-light">5</h2>
+							<span class="text-semibold text-success font-size-15">
+							<i class="ti-arrow-up font-size-11"></i> 
+								<span>0%</span>
+							</span>
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-align-left font-size-70 opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Start</h6>
+							<h6 class="font-weight-light">11/20/2025 09:06:26</h6>
+							<span class="text-semibold text-success font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-success opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-body box-height-150">
+	                <div class="media justify-content-between">
+						<div>
+							<h6 class="card-title">Duration</h6>
+							<h6 class="font-weight-light">00:02:57.2119410</h6>
+							<span class="text-semibold text-danger font-size-15">
+						</div>
+						<div class="align-self-end">
+							<i class="fa fa-clock-o font-size-70 text-danger opacity-01"></i>
+						</div>
+					</div>
+	            </div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+							</div>
+</div>
+<script>
+	var statusGroup = {
+    parentCount: 1,
+		passParent: 0,
+		failParent: 1,
+		fatalParent: 0,
+		errorParent: 0,
+		warningParent: 0,
+		skipParent: 0,
+		exceptionsParent: 1,
+		childCount: 5,
+		passChild: 0,
+		failChild: 5,
+		fatalChild: 0,
+		errorChild: 0,
+		warningChild: 0,
+		skipChild: 0,
+		infoChild: 0,
+		debugChild: 0,
+		exceptionsChild: 5,
+		grandChildCount: 15,
+		passGrandChild: 10,
+		failGrandChild: 5,
+		fatalGrandChild: 0,
+		errorGrandChild: 0,
+		warningGrandChild: 0,
+		skipGrandChild: 0,
+		infoGrandChild: 0,
+		debugGrandChild: 0,
+		exceptionsGrandChild: 5,
+	};
+</script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+	<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@cc89904c1a12065be1d08fc4994a258ef01b12bd/spark/js/scripts.js"></script>
+<script type='text/javascript'>
+	
+</script>
+</body>
+
+</html>
